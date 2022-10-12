@@ -5,11 +5,11 @@ import { store } from './app/store';
 import App from './App';
 
 test('renders learn react link', () => {
-  const { getByText } = render(
+  const { getByTestId } = render(
     <Provider store={store}>
       <App />
     </Provider>
   );
 
-  expect(getByText(/Hello World!/i)).toBeInTheDocument();
+  expect(getByTestId('main-box').tagName.toLowerCase()).toBe('div');
 });
