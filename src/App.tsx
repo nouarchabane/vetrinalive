@@ -34,6 +34,13 @@ function App() {
       <Divider sx={{
         gridArea: 'divider'
       }} orientation="vertical" />
+
+      <Box sx={{
+        gridArea: 'main'
+      }}>
+        <Main />
+      </Box>
+
     </Box>
   );
 }
